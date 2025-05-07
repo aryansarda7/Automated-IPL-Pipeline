@@ -116,8 +116,8 @@ Use **Tableau** or **Power BI** to visualize:
 ## 📬 Contact
 
 Aryan Sarda  
-Email: *your_email@example.com*  
-LinkedIn: *[LinkedIn Profile]*
+Email: *aryan.sarda7@gmail.com*  
+LinkedIn: https://www.linkedin.com/in/aryan-sarda-35aa551a5/
 
 ---
 
