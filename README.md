@@ -65,19 +65,19 @@ Cricbuzz API → AWS S3 → MySQL (RAW → SILVER → GOLD) / Snowflake → Tabl
    Create a file with AWS, MySQL, and other credentials:
    ```python
    MYSQL_CONFIG = {
-       'host': 'localhost',
-       'user': 'root',
+       'host': '',
+       'user': '',
        'password': 'your_password',
-       'database': 'ipl_project'
+       'database': ''
    }
 
    AWS_CONFIG = {
        'aws_access_key_id': 'YOUR_KEY',
        'aws_secret_access_key': 'YOUR_SECRET',
-       'region_name': 'us-east-1'
+       'region_name': ''
    }
 
-   BUCKET_NAME = 'ipl-project-arn'
+   BUCKET_NAME = ''
    ```
 
 3. **Run the Pipeline**
