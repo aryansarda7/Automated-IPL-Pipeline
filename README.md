@@ -12,19 +12,7 @@ A fully automated end-to-end Data Engineering + Data Analysis project that fetch
 
 ## 🧱 Architecture Overview
 
-[Cricbuzz API]
-↓
-[Airflow DAG] — fetches match data
-↓
-[AWS S3] — stores JSON files
-↓
-[RAW Layer] — raw_commentary, raw_scorecard tables
-↓
-[SILVER Layer] — parsed batting, bowling, and match summary data
-↓
-[GOLD Layer] — advanced KPIs and team/player stats
-↓
-[Superset] — visual dashboards refreshed via API
+[Cricbuzz API] -> [Airflow DAG] — fetches match data -> [AWS S3] — stores JSON files -> [RAW Layer] — raw_commentary, raw_scorecard tables -> [SILVER Layer] — parsed batting, bowling, and match summary data -> [GOLD Layer] — advanced KPIs and team/player stats -> [Superset] — visual dashboards refreshed via API
 
 
 ## 🛠️ Tech Stack
