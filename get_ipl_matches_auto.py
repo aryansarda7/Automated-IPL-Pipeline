@@ -1,19 +1,17 @@
-# get_ipl_matches_auto.py
-
 import http.client
 import json
 import boto3
 from datetime import datetime
 
 # -------- Your API and AWS Settings --------
-RAPIDAPI_HOST = ""
-RAPIDAPI_KEY = ""
-SERIES_ID = "9237"  # IPL 2025 series ID (based on uploaded schedule)
+RAPIDAPI_HOST = "  "
+RAPIDAPI_KEY = "  "
+SERIES_ID = "  "  # IPL 2025 series ID (based on uploaded schedule)
 
-AWS_ACCESS_KEY = ''
-AWS_SECRET_KEY = ''
-AWS_REGION = ''
-BUCKET_NAME = ''
+AWS_ACCESS_KEY = '  '
+AWS_SECRET_KEY = '  '
+AWS_REGION = '  '
+BUCKET_NAME = '  '
 
 # -------- Boto3 S3 Client --------
 s3 = boto3.client('s3',
@@ -74,7 +72,7 @@ def save_processed_matches(processed_ids):
 
 # -------- Main Script --------
 
-def main():
+def get_ipl_matches():
     print("\n🔵 Fetching list of completed matches from IPL series...")
     match_details = fetch_series_matches()
 
@@ -133,4 +131,4 @@ def main():
     print("\n🎯 All new matches processed and uploaded!")
 
 if __name__ == "__main__":
-    main()
+    get_ipl_matches()
